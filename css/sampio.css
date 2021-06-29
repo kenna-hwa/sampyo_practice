@@ -1,0 +1,224 @@
+
+/* body */
+body {
+    position: relative;
+    width: 1920px;
+    height: 100%;
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    background: beige;
+}
+
+/* header start */
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-top: 4px solid #ae2223;
+    width: 1920px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.header_container{
+    position: absolute;
+    display: flex;
+    width: 1820px;
+    height: 80px;
+    margin-top: 24px;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+.sam_sub_menu_wrap{
+    width: 678px;
+    height: 80px;
+}
+.sam_sub_menu{
+    display: flex;
+    width: 140px;
+    height: 14px;
+    margin: 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.sam_sub_menu>li>a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ae2223;
+}
+.sam_sub_menu>li:first-child::after{
+    content: "|";
+    color: #ae2223;
+    margin-left: 10px;
+    opacity: 50%;
+    font-size: 12px;
+}
+.sam_sub_menu>li:last-child::before{
+    content: "|";
+    color: #ae2223;
+    margin-right: 10px;
+    opacity: 50%;
+    font-size: 12px;
+}
+.sam_main_menu_wrap{
+    display: flex;
+    width: 465px;
+    height: 80px;
+    flex-flow: column wrap;
+}
+.sam_logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sam_logo>h1{
+    width: 98px;
+    height: 38px;
+    background: url(../images/sam_logo.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.sam_logo>h1>a{
+    display: block;
+    height: 100%;
+}
+.sam_logo_menu_wrap{
+    width: 464px;
+}
+.sam_logo_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sam_user_menu_wrap{
+    display: flex;
+    width: 678px;
+    height: 80px;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.sam_user_menu{
+    display: flex;
+    width: 202px;
+    height: 15px;
+    justify-content: space-between;
+}
+.sam_user_menu li>a{
+    display: inline-block;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+.sam_user_menu>li:nth-child(2)::after{
+    content: "|";
+    color: #444;
+    margin-left: 5px;
+    opacity: 50%;
+    font-size: 12px;
+}
+.sam_user_menu>li:nth-child(3)::after{
+    content: "|";
+    color: #444;
+    margin-left: 10px;
+    opacity: 50%;
+    font-size: 12px;
+}
+.sam_user_menu>li:nth-child(4)::after{
+    content: "|";
+    color: #444;
+    margin-left: 10px;
+    opacity: 50%;
+    font-size: 12px;
+}
+.search_btn{
+    width: 15px;
+    height: 15px;
+    background: url(../images/search.jpg) no-repeat;
+    text-indent: -9999px;
+    margin-top: 3px;
+}
+/* header end */
+/* main start */
+
+.main_wrap{
+    width: 1820px;
+    margin: auto;
+}
+.sam_caresel_img_wrap{
+    width: 1820px;
+    height: 680px;
+}
+.sam_caresel_img{
+    width: 1820px;
+    height: 680px;
+    background: url(../images/sam_caresel.jpg) no-repeat;
+    text-indent: -9999px;
+    z-index: 0;
+}
+.sam_caresel_img_arrow {
+    z-index: 1;
+}
+.sam_caresel_img_prev {
+    position: absolute;
+    top: 450px;
+    left: 120px;
+}
+.sam_caresel_img_next {
+    position: absolute;
+    top: 450px;
+    right: 120px;
+}
+.sam_middle_menu_wrap {
+    width: 1820px;
+    height: 273px;
+}
+.sam_middle_menu{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sam_middle_menu a{
+    display: block;
+    height: 100%;
+}
+.sam_middle_menu>li:nth-child(1){
+    width: 607px;
+    height: 273px;
+    background: url(../images/sam_mainmenu1.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.sam_middle_menu>li:nth-child(2){
+    width: 607px;
+    height: 273px;
+    background:  url(../images/sam_mainmenu2.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.sam_middle_menu>li:nth-child(3){
+    width: 607px;
+    height: 273px;
+    background:  url(../images/sam_mainmenu3.jpg) no-repeat;
+    text-indent: -9999px;
+}
+
+
+
+/* main end */
+
+/* footer start */
+
+
+.sam_link_container{
+    display: flex;
+}
+
+.sam_site_container{
+    display: flex;
+}
+
+.sam_customer_container{
+    display: flex;
+}
+
+/* footer end */
