@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>샘표식품</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/sampio.css">
+    <!-- <link rel="stylesheet" href="css/sampio.css"> -->
+    <link rel="stylesheet" href="css/sampiotablet.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -17,9 +19,9 @@
 <body>
     <header class="header" id="header">
         <section class="header_container">
-            <div class="sam_sub_menu_wrap">
-                <h2 class="blind">서브메뉴</h2>
-                <ul class="sam_sub_menu">
+            <div class="sam_top_menu_wrap">
+                <h2 class="blind">상단메뉴</h2>
+                <ul class="sam_top_menu">
                     <li><a href="#">채용</a></li>
                     <li><a href="#">고객센터</a></li>
                     <li><a href="#">이벤트</a></li>
@@ -29,28 +31,85 @@
                 <div class="sam_logo">
                     <h1><a href="#">샘표</a></h1>
                 </div>
-                <div class="sam_logo_menu_wrap">
+                <nav class="sam_logo_menu_wrap">
                     <h2 class="blind">메인메뉴</h2>
                     <ul class="sam_logo_menu">
-                        <li><a href="#">우리맛 연구</a></li>
-                        <li><a href="#">우리맛 체험</a></li>
-                        <li><a href="#">샘표 소개</a></li>
-                        <li><a href="#">제품 소개</a></li>
-                        <li><a href="#">마켓</a></li>
+                        <li class="nav_list"><a href="#" class="nav">우리맛 연구</a>
+                            <div class="sub_research_wrap">
+                                <ul id="sub1" class="sub_research">
+                                    <li><a href="#">소개</a></li>
+                                    <li><a href="#">프로세스</a></li>
+                                    <li><a href="#">연구 결과</a></li>
+                                    <li><a href="#">레시피</a></li>
+                                    <li><a href="#">글로벌 장 프로젝트</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_list"><a href="#" class="nav ourtaste_ex">우리맛 체험</a>
+                            <div class="sub_ex_wrap">
+                                <ul id="sub2" class="sub_ex">
+                                    <li><a href="#">샘표 우리맛 공간</a></li>
+                                    <li><a href="#">우리맛 위크</a></li>
+                                    <li><a href="#">맛있는 추억을 그리다</a></li>
+                                    <li><a href="#">된장학교</a></li>
+                                    <li><a href="#">발효학교</a></li>
+                                    <li><a href="#">우리맛 주니어 연구원</a></li>
+                                    <li><a href="#">우리맛 특강</a></li>
+                                    <li><a href="#">샘표 헤리티지 스페이스</a></li>
+                                    <li><a href="#">샘표 스페이스</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_list"><a href="#" class="nav introduce">샘표 소개</a>
+                            <div class="sub_comp_intro_wrap">
+                                <ul id="sub3" class="sub_comp_intro">
+                                    <li><a href="#">샘표</a></li>
+                                    <li><a href="#">샘표 75년</a></li>
+                                    <li><a href="#">샘표 CI</a></li>
+                                    <li><a href="#">샘표 소식</a></li>
+                                    <li><a href="#">영상</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_list"><a href="#" class="nav product">제품 소개</a>
+                            <div class="sub_product_intro_wrap">
+                                <ul id="sub4" class="sub_prod_intro">
+                                    <li><a href="#">새미네부엌</a></li>
+                                    <li><a href="#">연두</a></li>
+                                    <li><a href="#">폰타나</a></li>
+                                    <li><a href="#">티·아시아 키친</a></li>
+                                    <li><a href="#">백년동안</a></li>
+                                    <li><a href="#">질러</a></li>
+                                    <li><a href="#">순작</a></li>
+                                    <li><a href="#">샘표 장류</a></li>
+                                    <li><a href="#">샘표 국수</a></li>
+                                    <li><a href="#">반찬·통조림</a></li>
+                                    <li><a href="#">샘표 기본양념</a></li>
+                                    <li><a href="#">샘표 간편·양념</a></li>
+                                    <li><a href="#">샘표 간장</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav_list"><a href="#" class="nav">마켓</a></li>
                     </ul>
+                </nav>
+                <div class="sam_sub_box">
                 </div>
             </div>
 
             <div class="sam_user_menu_wrap">
+                <h2 class="blind">유저 메뉴</h2>
                 <ul class="sam_user_menu">
-                    <h2 class="blind">유저 메뉴</h2>
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">장바구니</a></li>
                     <li class="search_btn">찾기</li>
                 </ul>
             </div>
+
         </section>
+
     </header>
     <main class="main" id="main">
         <section class="main_wrap">
@@ -68,7 +127,7 @@
             <div class="sam_middle_menu_wrap">
                 <h2 class="blind">주요 메뉴</h2>
                 <ul class="sam_middle_menu">
-                    <li><a href="#">샘표의 비전 우리맛으로 세계인을 즐겁게</a></li>
+                    <li class="middleone"><a href="#">샘표의 비전 우리맛으로 세계인을 즐겁게</a></li>
                     <li><a href="#">샘표 75주년 맛있는 추억을 그리다</a></li>
                     <li><a href="#">우리맛 연구 우리 식문화 발전을 위한 샘표 우리맛 연구</a></li>
                 </ul>
@@ -129,7 +188,7 @@
                     <h3>고객지원실</h3>
                     <ul>
                         <li>상담시간 평일: 09:00~17:00 <br>(점심시간 : 12:30~13:30)</li>
-                        <li>TEL : 080-996-7777    FAX : 070-4275-5285</li>
+                        <li>TEL : 080-996-7777 FAX : 070-4275-5285</li>
                         <li>1:1 온라인 문의 : <span><a href="#">고객의 소리</a></span></li>
                     </ul>
                 </div>
@@ -137,7 +196,7 @@
                     <div class="sam_company_inicis">
                         <div class="sam_our_company">
                             <h3>샘표식품 주식회사</h3>
-                            주소: (04557) 서울특별시 중구 충무로2  대표번호: 02-3393-4400  대표이사: 박진선  사업자 번호: 446-87-00473
+                            주소: (04557) 서울특별시 중구 충무로2 대표번호: 02-3393-4400 대표이사: 박진선 사업자 번호: 446-87-00473
                             <br>
                             통신판매업신고번호: 제 2016-서울중구-1160호 개인정보 보호책임자: 박광배
                             <span><a href="#">사업자정보 확인</a></span>
@@ -152,18 +211,18 @@
                 <div class="sam_relation_lang_sns">
                     <h3 class="blind">관련사이트 / 언어 선택/sns</h3>
                     <div class="sam_relation_lang_wrap">
-                    <ul class="sam_relation_site">
-                        <li><a href="#">관련사이트</a></li>
-                        <li><a href="#">관련사이트</a></li>
-                        <li><a href="#">관련사이트</a></li>
-                    </ul>
-                    <ul class="sam_lang">
-                        <li><a href="#">한국어</a></li>
-                        <li><a href="#">한국어</a></li>
-                        <li><a href="#">한국어</a></li>
-                        <li><a href="#">한국어</a></li>
-                    </ul>
-                </div>
+                        <ul class="sam_relation_site">
+                            <li><a href="#">관련사이트</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                        </ul>
+                        <ul class="sam_lang">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </div>
                     <div class="sam_official_sns">
                         <h3 class="blind">샘표 공식 SNS</h3>
                         <ul class="sam_official_sns_list">
@@ -175,7 +234,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
             <div class="footer_bottom_last">
                 <p>(C) 1946-2018 SEMPIO</p>

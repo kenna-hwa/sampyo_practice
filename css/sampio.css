@@ -1,3 +1,4 @@
+/* 1024px 이상 PC */
 
 /* body */
 body {
@@ -6,7 +7,7 @@ body {
     height: 100%;
     margin: auto;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* header start */
@@ -29,11 +30,11 @@ body {
     justify-content: center;
     flex-flow: row nowrap;
 }
-.sam_sub_menu_wrap{
+.sam_top_menu_wrap{
     width: 678px;
     height: 80px;
 }
-.sam_sub_menu{
+.sam_top_menu{
     display: flex;
     width: 140px;
     height: 14px;
@@ -41,30 +42,35 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-.sam_sub_menu>li>a{
-    font-size: 12px;
-    font-weight: 400;
+.sam_top_menu>li>a{
+    font-size: 0.75rem;
+    font-weight: 500;
     color: #ae2223;
 }
-.sam_sub_menu>li:first-child::after{
-    content: "|";
-    color: #ae2223;
-    margin-left: 10px;
-    opacity: 50%;
-    font-size: 12px;
+.sam_top_menu>li>a:hover{
+    text-decoration: underline;
 }
-.sam_sub_menu>li:last-child::before{
+.sam_top_menu>li:first-child::after{
     content: "|";
-    color: #ae2223;
-    margin-right: 10px;
+    color: #444;
+    margin-left: 8px;
     opacity: 50%;
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+.sam_top_menu>li:last-child::before{
+    content: "|";
+    color: #444;
+    margin-right: 8px;
+    opacity: 50%;
+    font-size: 0.75rem;
 }
 .sam_main_menu_wrap{
     display: flex;
     width: 465px;
     height: 80px;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 .sam_logo{
     display: flex;
@@ -83,13 +89,22 @@ body {
 }
 .sam_logo_menu_wrap{
     width: 464px;
+    height: 20px;
 }
 .sam_logo_menu{
     display: flex;
-    align-items: center;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    font-size: 14px;
-    font-weight: 400;
+    box-sizing: border-box;
+}
+.nav{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.001em;
+    bottom: 5px;
 }
 .sam_user_menu_wrap{
     display: flex;
@@ -107,38 +122,182 @@ body {
 .sam_user_menu li>a{
     display: inline-block;
     height: 15px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     color: #666;
+}
+.sam_user_menu li>a:hover{
+    color: #ae2223;
+    text-decoration: underline;
+}
+.sam_user_menu>li:nth-child(1)::after{
+    content: "|";
+    color: #444;
+    margin-left: 10px;
+    opacity: 50%;
+    font-size: 0.75rem;
 }
 .sam_user_menu>li:nth-child(2)::after{
     content: "|";
     color: #444;
-    margin-left: 5px;
+    margin-left: 10px;
     opacity: 50%;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .sam_user_menu>li:nth-child(3)::after{
     content: "|";
     color: #444;
     margin-left: 10px;
     opacity: 50%;
-    font-size: 12px;
-}
-.sam_user_menu>li:nth-child(4)::after{
-    content: "|";
-    color: #444;
-    margin-left: 10px;
-    opacity: 50%;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .search_btn{
     width: 15px;
     height: 15px;
     background: url(../images/search.jpg) no-repeat;
     text-indent: -9999px;
-    margin-top: 3px;
+    margin-top: 8px;
 }
+/* sub 전체 */
+#sub1 {
+    display: none;
+}
+#sub2 {
+    display: none;
+}
+#sub3 {
+    display: none;
+}
+#sub4 {
+    display: none;
+}
+.sam_sub_box{
+    position: absolute;
+    display: none;
+    top: 88px;
+    left: 0px;
+    width: 100%;
+    height: 46px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid rgba(110, 110, 110, 0.5);
+    background: #fff;
+    z-index: 1;
+}
+/* 개별 sub */
+
+/* 우리맛 연구 */
+.nav_list:nth-child(1):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 6px;
+}
+.nav_list>:nth-child(1){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_research{
+    position: absolute;
+    display: flex;
+    width: 340px;
+    height: 46px;
+    top: 89px;
+    left: 545px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_research a{
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+/* 우리맛 체험 */
+.nav_list:nth-child(2):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 6px;
+}
+.nav_list>:nth-child(2){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_ex{
+    position: absolute;
+    display: flex;
+    width: 890px;
+    height: 46px;
+    top: 89px;
+    left: 460px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_ex a{
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+/* 샘표 소개 */
+.nav_list:nth-child(3):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 6px;
+}
+.nav_list>:nth-child(3){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_comp_intro{
+    position: absolute;
+    display: flex;
+    width: 335px;
+    height: 46px;
+    top: 89px;
+    left: 775px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_comp_intro a{
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+/* 제품 소개 */
+.nav_list:nth-child(4):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 6px;
+}
+.nav_list>:nth-child(4){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_prod_intro{
+    position: absolute;
+    display: flex;
+    width: 915px;
+    height: 46px;
+    top: 89px;
+    left: 450px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_prod_intro a{
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+
 /* header end */
 /* main start */
 
@@ -211,6 +370,7 @@ body {
 .sam_notice_event_wrap{
     width: 1820px;
     height: 78px;
+    overflow: hidden;
 }
 .sam_notice_event{
     display: flex;
@@ -240,13 +400,13 @@ body {
     text-indent: -9999px;
 }
 .sam_notice_wrap>p>a{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #aea288;
 }
 .sam_notice{
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -256,7 +416,7 @@ body {
     position: relative;
     width: 200px;
     top: 48px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 3rem;
 }
 .sam_event_wrap{
@@ -267,7 +427,7 @@ body {
 }
 .sam_event_wrap>p:first-child{
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 400;
     color: #aea288;
     align-items: center;
@@ -275,7 +435,7 @@ body {
     margin-right: 50px;
 }
 .sam_event_wrap>p>a{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #aea288;
 }
@@ -292,7 +452,7 @@ body {
     position: relative;
     width: 280px;
     top: 16px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 3rem;
 }
 .sam_brand_recipe_wrap {
@@ -335,10 +495,10 @@ body {
 .footer_wrap{
     width: 100%;
     margin: auto;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .footer_wrap h3{
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 .sam_link_wrap{
@@ -360,7 +520,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -368,7 +528,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -376,7 +536,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -384,7 +544,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -392,7 +552,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -400,7 +560,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -408,7 +568,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -416,7 +576,7 @@ body {
     content: " | ";
     margin-left: 15px;
     color: #eee;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: lighter;
     opacity: 30%;
 }
@@ -449,7 +609,7 @@ body {
 }
 .sam_for_customer>ul>li>span>a::after{
     content: " 〉";
-    font-size: 5px;
+    font-size: 0.3125rem;
     margin-left: 3px;
 }
 .sam_company_inicis_wrap{
@@ -484,7 +644,7 @@ body {
 }
 .sam_our_company>span>a::after{
     content: " 〉";
-    font-size: 5px;
+    font-size: 0.3125rem;
     margin-left: 3px;
 }
 .sam_inicis_service{
@@ -500,7 +660,7 @@ body {
 }
 .sam_inicis_service>span>a::after{
     content: " 〉";
-    font-size: 5px;
+    font-size: 0.3125rem;
     margin-left: 3px;
 }
 .sam_relation_lang_sns{
@@ -530,7 +690,7 @@ body {
     position: relative;
     width: 167px;
     padding-left: 7px;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 2.5em;
     border: 1px solid #e2e2e2;
     box-sizing: border-box;
@@ -551,7 +711,7 @@ body {
     position: relative;
     width: 167px;
     padding-left: 7px;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 2.5em;
     border: 1px solid #e2e2e2;
     box-sizing: border-box;

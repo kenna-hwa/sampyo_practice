@@ -1,0 +1,332 @@
+
+
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+
+body{
+    width: 1023px;
+    height: 100%;
+    font-size: 16px;
+    background: rosybrown;
+}
+.header{
+    width: 1023px;
+    height: 125px;
+    background: #fff;
+    border-top: 5px solid #ae2223;
+    box-sizing: border-box;
+}
+.header_container{
+    display: flex;
+    width: 945px;
+    height: 120px;
+    margin: auto;
+    padding-top: 24px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.sam_top_menu_wrap{
+    width: 240px;
+    height: 80px;
+}
+.sam_top_menu{
+    display: flex;
+    width: 138px;
+    height: 12px;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.sam_top_menu a{
+    font-weight: 500;
+    color: #ae2223;
+}
+.sam_top_menu>li:nth-child(2)::before{
+    content: "|";
+    margin-right: 8px;
+    font-size: 0.625rem;
+    color: rgba(44, 44, 44, 0.6);
+}
+.sam_top_menu>li:nth-child(2)::after{
+    content: "|";
+    margin-left: 8px;
+    font-size: 0.625rem;
+    color: rgba(44, 44, 44, 0.6);
+}
+.sam_main_menu_wrap{
+    display: flex;
+    width: 469px;
+    height: 80px;
+    flex-flow: column wrap;
+}
+.sam_logo{
+    width: 464px;
+    height: 40px;
+}
+.sam_logo>h1{
+    width: 100px;
+    height: 40px;
+    background: url(../images/sam_logo.jpg) no-repeat;
+    text-indent: -9999px;
+    margin: 1px auto 0;
+}
+.sam_logo>h1>a{
+    display: block;
+    height: 100%;
+}
+.sam_logo_menu_wrap{
+    width: 464px;
+    height: 40px;
+}
+.sam_logo_menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+.sam_logo_menu li a{
+    color: #333;
+    font-weight: 500;
+}
+.sam_user_menu_wrap{
+    width: 236px;
+    height: 80px;
+}
+.sam_user_menu{
+    display: flex;
+    width: 200px;
+    height: 12px;
+    margin-left: auto;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.sam_user_menu a {
+    font-weight: 500;
+    color: #999;
+}
+.sam_user_menu>li:nth-child(2)::before{
+    content:"|";
+    margin-right: 10px;
+    font-size: 0.625rem;
+    color: rgba(44, 44, 44, 0.6);
+}
+.sam_user_menu>li:nth-child(2)::after{
+    content:"|";
+    margin-left: 10px;
+    font-size: 0.625rem;
+    color: rgba(44, 44, 44, 0.6);
+}
+.sam_user_menu>li:nth-child(3)::after{
+    content:"|";
+    margin-left: 10px;
+    font-size: 0.625rem;
+    color: rgba(44, 44, 44, 0.6);
+}
+.search_btn{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: url(../images/search.jpg) no-repeat;
+    text-indent: -9999px;
+}
+/* sub menu */
+.sam_sub_box{
+    position: absolute;
+    display: none;
+    width: 1023px;
+    height: 45px;
+    top: 125px;
+    left: 0;
+    background: #fff;
+}
+ #sub1, #sub2, #sub3, #sub4{
+    display: none;
+}
+/* 개별 sub */
+
+/* 우리맛 연구 */
+.nav_list:nth-child(1):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 13px;
+}
+.nav_list>:nth-child(1){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_research{
+    position: absolute;
+    display: flex;
+    width: 355px;
+    height: 45px;
+    top: 125px;
+    left: 140px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_research a{
+    display: inline-block;
+    float: left;
+    font-size: 0.825rem;
+    font-weight: 500;
+    color: #666;
+}
+/* 우리맛 체험 */
+.nav_list:nth-child(2):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 13px;
+}
+.nav_list>:nth-child(2){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_ex{
+    position: absolute;
+    display: flex;
+    width: 910px;
+    height: 45px;
+    top: 125px;
+    left: 55px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_ex a{
+    display: inline-block;
+    float: left;
+    font-size: 0.825rem;
+    font-weight: 500;
+    color: #666;
+}
+/* 샘표 소개 */
+.nav_list:nth-child(3):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 13px;
+}
+.nav_list>:nth-child(3){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_comp_intro{
+    position: absolute;
+    display: flex;
+    width: 335px;
+    height: 45px;
+    top: 125px;
+    left: 375px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_comp_intro a{
+    display: inline-block;
+    float: left;
+    font-size: 0.825rem;
+    font-weight: 500;
+    color: #666;
+}
+/* 제품 소개 */
+.nav_list:nth-child(4):hover{
+    border-bottom: 2px solid #a8a4a1;
+    padding-bottom: 13px;
+}
+.nav_list>:nth-child(4){
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.sub_prod_intro{
+    position: absolute;
+    display: flex;
+    width: 910px;
+    height: 45px;
+    top: 125px;
+    left: 55px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.sub_prod_intro a{
+    display: inline-block;
+    float: left;
+    font-size: 0.825rem;
+    font-weight: 500;
+    color: #666;
+}
+/* main */
+main{
+    width: 945px;
+    height: 100%;
+    margin: auto;
+}
+.sam_caresel_img_wrap{
+    width: 945px;
+    height: 446px;
+    background: url(../images/1024/sam_1024_caresel.jpg) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+.sam_caresel_img_arrow{
+    display: flex;
+    width: 945px;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+.sam_caresel_img_prev{
+    width: 25px;
+    height: 48px;
+    margin-left: 55px;
+    background: url(../images/arrow_next.png) no-repeat;
+    background-size: contain;
+}
+.sam_caresel_img_next{
+    width: 25px;
+    height: 48px;
+    margin-right: 55px;
+    background: url(../images/arrow_prev.png) no-repeat;
+    background-size: contain;
+}
+.sam_caresel_img_arrow a{
+    display: block;
+}
+.sam_middle_menu_wrap {
+    width: 945px;
+    background: #999;
+    height: 177px;
+}
+.sam_middle_menu{
+    display: flex;
+    width: 945px;
+    height: 177px;
+}
+.sam_middle_menu li:nth-child(1){
+    width: 315px;
+    height: 177px;
+    background: url(../images/1024/sam_1024_mainmenu1.jpg);
+    text-indent: -9999px;
+}
+.sam_middle_menu li:nth-child(2){
+    width: 315px;
+    height: 177px;
+    background: url(../images/1024/sam_1024_mainmenu2.jpg);
+    text-indent: -9999px;
+}
+.sam_middle_menu li:nth-child(3){
+    width: 315px;
+    height: 177px;
+    background: url(../images/1024/sam_1024_mainmenu3.jpg);
+    text-indent: -9999px;
+}
+.sam_middle_menu a{
+    display: block;
+    height: 100%;
+}
+
+
+
+
+}
